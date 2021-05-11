@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+   <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolBar"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+       android:background="@color/colorPrimaryDark"
+       app:title="Stay Safe"
+       app:titleTextColor="@color/white"
+       app:navigationIcon="@drawable/ic_power_settings_new_black_24dp"/>
+    <fragment android:id="@+id/map"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar"
+        tools:context=".map.MapsActivity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    <Button
+        android:id="@+id/datebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+
+        android:background="@drawable/circle_shape"
+        android:textColor="#000000"/>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Finish"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/ftoolBar"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:background="@color/colorPrimaryDark"
+        app:title="Stay Safe"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_power_settings_new_black_24dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Thank you for keeping everyone safe. Your Home Qarantine period is over"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:id="@+id/msg">
+
+
+
+    </TextView>
+
+
+</LinearLayout>
